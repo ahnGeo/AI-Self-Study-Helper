@@ -1,0 +1,24 @@
+C:\Users\ahnge\Desktop\2109_Contest\ChungJu>git log
+commit 59bce769b038aaea2dd154443497338dd82ce9e5 (HEAD -> main)
+Author: ahngeo11 <ahngeo11@gmail.com>
+Date:   Sun Oct 17 00:56:35 2021 +0900
+
+    make complete file for live video
+
+commit 4a556138ac4d845fcb0bd38b4ef5a4040a421ce7
+Author: ahngeo11 <ahngeo11@gmail.com>
+Date:   Fri Oct 15 00:27:17 2021 +0900
+
+    complete REST_OD code
+
+commit 429539a670741b6eff1b07ab36635676ed70f52c
+Author: ahngeo11 <ahngeo11@gmail.com>
+Date:   Sat Oct 9 02:09:40 2021 +0900
+
+    issue with json data response.data which is result of object-detect-api
+
+commit 92fb839d663d1e0064ec032959b308d853d9f2e4
+Author: Geo Ahn <67467737+ahnGeo@users.noreply.github.com>
+Date:   Wed Oct 6 01:07:35 2021 +0900
+
+    Goal : UseAPIOnImage

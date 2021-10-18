@@ -54,18 +54,22 @@ while True:
         print("[responBody]")
         responseData = response.data.decode('utf8').replace("'", '"')
         responseData = json.loads(responseData)
+        print(responseData)
         
         # with open("./result.txt", 'a') as f:
         #    f.write(responseData+'\n')
 
 ###################OD_API########################
 ###################Check studying state##########
-        jsonListInFrame = responseData["return_object"]["data"]
-        classesInFrame = []
-        for jsonInFrame in jsonListInFrame :
-            classesInFrame.append(jsonInFrame["class"])
+        if responseData["return_object"] == {} :
+            jsonListInFrame = []
+        else :
+            jsonListInFrame = responseData["return_object"]["data"]
+            classesInFrame = []
+            for jsonInFrame in jsonListInFrame :
+                classesInFrame.append(jsonInFrame["class"])
         
-        if "cell phone" in classesInFrame or "person" not in classesInFrame :
+        if "cell phone" in classesInFrame or "person" not in classesInFrame or jsonListInFrame == []:
             #alert
             window = Tk()
             window.title("Alert")
